@@ -636,3 +636,177 @@ Successfully integrated **GitHub** with **Jenkins** to automate builds using **m
 ---
 
 If you want, I can also give **very short exam-friendly definitions of Jenkins, CI, CD, Poll SCM, and Webhooks** (these are commonly asked viva questions for this experiment).
+
+Here are **detailed Jenkins installation steps** you can write in your lab record.
+
+---
+
+# **Installation of Jenkins**
+
+**Jenkins** is an open-source automation server used for **Continuous Integration and Continuous Deployment (CI/CD)**.
+
+---
+
+# **Prerequisite**
+
+Before installing Jenkins, install **Java** because Jenkins runs on Java.
+
+### Step 1: Install Java
+
+1. Download **Java** (JDK) from the official website.
+2. Run the installer and complete the installation.
+3. Verify installation using command prompt:
+
+```
+java -version
+```
+
+If Java is installed successfully, the version will be displayed.
+
+---
+
+# **Jenkins Installation Steps**
+
+### Step 1: Download Jenkins
+
+1. Open a web browser.
+2. Go to the official Jenkins website:
+
+[https://www.jenkins.io](https://www.jenkins.io)
+
+3. Click **Download**.
+4. Select **Windows** installer (`.msi` file).
+
+---
+
+### Step 2: Run Jenkins Installer
+
+1. Open the downloaded **Jenkins.msi** file.
+2. Click **Next** to start installation.
+
+---
+
+### Step 3: Select Installation Location
+
+1. Choose the folder where Jenkins should be installed.
+2. Default location is usually:
+
+```
+C:\Program Files\Jenkins
+```
+
+3. Click **Next**.
+
+---
+
+### Step 4: Configure Jenkins Port
+
+1. Jenkins will run on default port:
+
+```
+8080
+```
+
+2. Click **Next**.
+
+---
+
+### Step 5: Install Jenkins as a Windows Service
+
+1. Jenkins will be installed as a **Windows Service**.
+2. Click **Next** to continue.
+
+---
+
+### Step 6: Begin Installation
+
+1. Click **Install**.
+2. Wait for installation to complete.
+
+---
+
+### Step 7: Finish Installation
+
+1. Click **Finish** after installation completes.
+2. Jenkins will start automatically.
+
+---
+
+# **Unlock Jenkins**
+
+### Step 8: Open Jenkins Dashboard
+
+1. Open a browser.
+2. Go to:
+
+```
+http://localhost:8080
+```
+
+---
+
+### Step 9: Get Administrator Password
+
+Jenkins asks for an **initial administrator password**.
+
+1. Open the file:
+
+```
+C:\ProgramData\Jenkins\secrets\initialAdminPassword
+```
+
+2. Copy the password.
+
+---
+
+### Step 10: Enter Password
+
+1. Paste the password into the Jenkins unlock page.
+2. Click **Continue**.
+
+---
+
+# **Install Jenkins Plugins**
+
+### Step 11: Install Suggested Plugins
+
+1. Click **Install Suggested Plugins**.
+2. Jenkins will automatically install required plugins.
+
+---
+
+# **Create Admin User**
+
+### Step 12: Create Jenkins Admin Account
+
+1. Enter:
+
+   * Username
+   * Password
+   * Email
+2. Click **Save and Continue**.
+
+---
+
+# **Start Jenkins**
+
+### Step 13: Access Jenkins Dashboard
+
+1. Click **Start using Jenkins**.
+2. The **Jenkins dashboard** will open.
+
+---
+
+# **Verify Installation**
+
+You can now create jobs and integrate Jenkins with **GitHub** repositories to automate builds.
+
+---
+
+✅ **Result:**
+Successfully installed **Jenkins** and configured it for CI/CD automation.
+
+---
+
+If you want, I can also give **a small diagram of the Jenkins CI/CD workflow (GitHub → Jenkins → Build → Deploy)** which teachers often like in lab records.
+

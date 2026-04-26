@@ -1,7 +1,16 @@
 for b2
-pipeline {
-    agent any
 
+FROM python:3.10
+WORKDIR /app
+COPY . .
+CMD ["python","app.py"]
+
+
+
+pipeline {
+
+    agent any
+    
     environment {
         DOCKERHUB_USER = 'sinchananagendra03'
         APP_NAME = 'myapp'
